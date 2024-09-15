@@ -1,12 +1,588 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/output.css">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
 <body>
-    <h1>this is heading One</h1>
+    <!-- header-section -->
+ <section class="header-top flex justify-between mx-12">
+    <div class="top-left flex">
+        <div class="left-info mr-6">
+            <i class="fa-solid fa-location-dot text-[#AB7442] text-xs "></i>
+            <span class="text-center text-xs">123 Street, New York, USA</span>
+        </div>
+        <div class="left-info">
+            <i class="fa-regular fa-clock text-[#AB7442] text-xs "></i>
+            <span class="text-center text-xs">123 Street, New York, USA</span>
+        </div>
+    </div>
+    <div class="top-right flex">
+        <div class="left-info mr-6">
+            <i class="fa-solid fa-phone text-[#AB7442] text-xs "></i>
+            <span class="text-center text-xs">123 Street, New York, USA</span>
+        </div>
+        <div class="social-link">
+            <i class="fa-brands fa-facebook-f mr-2 text-[#AB7442] text-xs"></i>
+            <i class="fa-brands fa-twitter mr-2 text-[#AB7442] text-xs"></i>
+            <i class="fa-brands fa-linkedin-in mr-2 text-[#AB7442] text-xs"></i>
+            <i class="fa-brands fa-instagram mr-2 text-[#AB7442] text-xs"></i>
+        </div>
+    </div>
+ </section>
+ <!-- navbar-section -->
+ <section class="navbar flex justify-between mx-12 mt-6">
+    <div class="navbrand text-3xl font-bold text-[#AB7442]">WooDY</div>
+    <div class="nav-links flex items-center">
+        <ul class="flex">
+            <li class="mr-5 text-sm uppercase"><a href="" class="active text-[#AB7442] ">Home</a></li>
+            <li class="mr-5 text-sm uppercase"><a href="">About</a></li>
+            <li class="mr-5 text-sm uppercase"><a href="">Service</a></li>
+            <li class="mr-5 text-sm uppercase"><a href="">Project</a></li>
+            <li class="mr-5 text-sm uppercase"><a href="">Pages <i class="fa-solid fa-caret-down"></i></a></li>
+            <li class="mr-5 text-sm uppercase"><a href="">Contact</a></li>
+        </ul>
+        <a href="" class="btn ml-10 bg-[#AB7442] py-4 px-9 text-white">Get A Quote <i class="fa-solid fa-arrow-right"></i></a>
+
+    </div>
+ </section>
+ <!-- banner-section -->
+ <section class="banner">
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <img src="./img/carousel-1.jpg" class="relative" alt="">
+                <div class="banner-text absolute top-1/3 left-52 text-center text-white ">
+                    <div class="layer bg-slate-600 absolute top-0 left-0"></div>
+                    <h5 class="text-2xl pb-7 uppercase font-bold">Welcome to Woody</h5>
+                    <h1 class="text-6xl font-bold pb-8">Best Carpenter & Craftsman <br> Services</h1>
+                    <p class="text-xl pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores  adipisci tempora  doloremque </p>
+                    <a href="" class="btn px-8 py-3 mr-8 bg-[#AB7442]">Read More</a>
+                    <a href="" class="btn px-8 py-3  bg-white text-black">Free Quote</a>
+            
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel-2.jpg" class="relative" alt="">
+                <div class="banner-text absolute top-1/3 left-52 text-center text-white ">
+                    <h5 class="text-2xl pb-7 uppercase font-bold">Welcome to Woody</h5>
+                    <h1 class="text-6xl font-bold pb-8">Best Carpenter & Craftsman <br> Services</h1>
+                    <p class="text-xl pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores  adipisci tempora  doloremque </p>
+                    <a href="" class="btn px-8 py-3 mr-8 bg-[#AB7442]">Read More</a>
+                    <a href="" class="btn px-8 py-3  bg-white text-black">Free Quote</a>
+            
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/carousel-3.jpg" class="relative" alt="">
+                <div class="banner-text absolute top-1/3 left-52 text-center text-white ">
+                    <h5 class="text-2xl pb-7 uppercase font-bold">Welcome to Woody</h5>
+                    <h1 class="text-6xl font-bold pb-8">Best Carpenter & Craftsman <br> Services</h1>
+                    <p class="text-xl pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores  adipisci tempora  doloremque </p>
+                    <a href="" class="btn px-8 py-3 mr-8 bg-[#AB7442]">Read More</a>
+                    <a href="" class="btn px-8 py-3  bg-white text-black">Free Quote</a>
+            
+                </div>
+            </div>
+
+          </div>
+       
+        </div>
+      
+    
+   
+   
+  
+ </section>
+
+<!-- about-to-section -->
+  <section class="about-top flex justify-between mx-12 mt-16">
+    <div class="about-col">
+        <i class="fa-solid fa-user-check text-[#AB7442] text-3xl"></i>
+        <span class="text-xl font-bold text-[#353535]">Creative Designers</span>
+    </div>
+    <div class="about-col">
+        <i class="fa-solid fa-check text-[#AB7442] text-3xl"></i>
+        <span class="text-xl font-bold text-[#353535]">Quality Products</span>
+    </div>
+    <div class="about-col">
+        <i class="fa-solid fa-compass-drafting text-[#AB7442] text-3xl"></i>
+        <span class="text-xl font-bold text-[#353535]">Free Consultation</span>
+    </div>
+    <div class="about-col">
+        <i class="fa-solid fa-headphones text-[#AB7442] text-3xl"></i>
+        <span class="text-xl font-bold text-[#353535]">Customer Support</span>
+    </div>
+ </section>
+ <!-- about-info-section -->
+ <div class="about mt-6">
+    <div class="about-info flex items-center">
+        <div class="img-part mt-16">
+            <img src="img/about.jpg" alt="">
+        </div>
+        <div class="info-part ml-6">
+            <h1 class="text-5xl font-bold text-[#353535]">About Us</h1>
+            <p class="mt-6 text-[#353535]">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet <br> diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat  amet</p>
+            <div class="info-bottom flex mt-12 justify-between mx-20 ">
+                <div class="info-col flex">
+                    <i class="fa-solid fa-users text-[#AB7442] text-3xl"></i>
+                    <div class="div ml-6 ">
+                        <h5 class=" text-[#AB7442] text-3xl font-bold">1234</h5>
+                        <span>Happy Clients</span>
+                    </div>
+                    
+                </div>
+                <div class="info-col flex">
+                    <i class="fa-solid fa-check text-[#AB7442] text-3xl"></i>
+                    <div class="div ml-6">
+                        <h5 class=" text-[#AB7442] text-3xl font-bold">1234</h5>
+                        <span>Happy Clients</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="about-btn mt-6">
+                <a href="" class="btn  bg-[#AB7442] py-4 px-9 ml-6 text-white">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+           
+            
+
+        </div>
+    </div>
+ </div> 
+ <!-- service-section -->
+  <section class="services mt-12 ml-12">
+    <h1 class="mt-6 text-5xl font-bold text-center text-[#353535]">Our Services</h1>
+
+    <div class="service-row flex mt-12">
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-1.jpg" class="mt-6" alt="">
+            <h3 class="mt-6 text-2xl font-bold">General Carpentry</h3>
+            <p class="mt-6">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+            <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+            
+        </div>
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-2.jpg" class="mt-6" alt="">
+            <h3 class="mt-6 text-2xl font-bold">Furniture Manufacturing</h3>
+            <p class="mt-6">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+            <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+        </div>
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-3.jpg" class="mt-6" alt="">
+            <h3 class="mt-6 text-2xl font-bold">Furniture Remodeling</h3>
+            <p class="mt-6">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+            <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+        </div>
+    </div>
+    <div class="service-row flex ">
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-4.jpg" class="mt-6" alt="">
+                <h3 class="mt-6 text-2xl font-bold">Wooden Floor</h3>
+                <p class="mt-6">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+                <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+            </div>
+            
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-5.jpg" class="mt-6" alt="">
+            <h3 class="mt-6 text-2xl font-bold">Wooden Furniture</h3>
+            <p class="mt-6">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+            <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+        </div>
+        <div class="service-col text-center mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/service-6.jpg" class="mt-6" alt="">
+            <h3 class="mt-6 text-2xl font-bold">Custom Work</h3>
+            <p class="mt-6 ">Stet stet jus to dolor sed duo. Ut clit a sea sit <br>  ipsum diam lorem diam.</p>
+            <a href="" class="btn ml-10 text-[#AB7442] py-4 px-9">Get A Quote <i class="fa-solid fa-arrow-right text-xs"></i></a>
+
+        </div>
+    </div>
+  </section>
+  <!-- feature-section -->
+  <div class="feature-section mt-6">
+    <div class="feature flex items-center">
+       
+        <div class="info-part ml-6 mr-6">
+            <h1 class="text-5xl font-bold text-[#353535]">Why Choose Us</h1>
+            <p class="mt-6 text-[#353535] ">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet <br> diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat  amet</p>
+            <div class="info-bottom flex justify-between m-6 mt-6 ">
+                <div class="info-col flex ">
+                    <i class="fa-solid fa-check text-[#AB7442] text-3xl"></i>
+                    <div class="div ml-6 ">
+                        <span>Quality</span>
+                        <h4 class="text-xl font-bold">Services</h4>
+                    </div>
+                </div>
+                <div class="info-col flex ">
+                    <i class="fa-solid fa-user-check text-[#AB7442] text-3xl"></i>
+                    <div class="div ml-6">
+                        <span>Creative</span>
+                        <h4 class="text-xl font-bold">Designers
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="info-bottom flex justify-between m-6 mt-6 ">
+                <div class="info-col flex ">
+                    <i class="fa-solid fa-pen-to-square text-[#AB7442] text-3xl"> </i>
+                    <div class="div ml-6 ">
+                        <span>Free</span>
+                        <h4 class="text-xl font-bold">Consultation</h4>
+                    </div>
+                </div>
+                <div class="info-col flex ">
+                    <i class="fa-solid fa-headphones text-[#AB7442] text-3xl"> </i>
+                    <div class="div ml-6 ">
+                        <span>Customer</span>
+                        <h4 class="text-xl font-bold">Support</h4>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="feature-btn mt-6">
+                <a href="" class="btn  bg-[#AB7442] py-4 px-9 ml-6 text-white">Explore More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="img-part mt-6">
+            <img class="h-svh" src="./img/feature.jpg" alt="">
+        </div>
+    </div>
+ </div> 
+ <!-- project-section -->
+ <section class="project-section mt-6 mx-12">
+    <h1 class="text-center text-5xl font-bold mt-20  text-[#353535]">Our Project</h1>
+    <div class="project-category text-center mt-6">
+       <a href="">All</a>
+       <a href="">General Carpentry </a>
+       <a href="">Custom Carpentry</a>
+    </div>
+    <div class="project-row flex">
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-1.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div>
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-2.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div>
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-3.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div> 
+        
+    </div>
+    <div class="project-row flex">
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-3.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div>
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-5.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div>
+        <div class="project-col mr-6" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/portfolio-6.jpg" alt="" class=" mt-16 ">
+            <div class="col-des ml-6">
+                <p class="text-[#AB7442] mt-3  ">General Carpentry</p>
+                <h3 class="text-xl font-bold mt-2">Wooden Furniture Manufacturing And <br>Remodeling</h3>
+            </div>
+        </div> 
+        
+    </div>
+ </section>
+ <!-- quote-section -->
+ <div class="quote-section mt-20 flex">
+    <div class="img-part mr-12">
+        <img src="img/quote.jpg" alt="">
+    </div>
+    <div class="des-part">
+        <h2 class="mt-14 text-[#353535] text-5xl font-bold mb-6">Free Quote</h2>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet <br> diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat  amet</p>
+        <form action="#" flex>
+            <div class="grid grid-cols-2 gap-5 mt-12">
+                <input type="text" placeholder="Your Name" class="  px-3 py-5 border border-[#AB7442]">
+                <input type="text" placeholder="Your Email"  class="  px-3 py-5 border border-[#AB7442]">
+            </div>
+            <div class="grid grid-cols-2 gap-5 mt-12">
+                <input type="text" placeholder="Your Mobile" class="border border-[#AB7442]  px-3 py-2">
+                <select placeholder="Select A Service">
+                    <option value="">Select A Service</option>
+                    <option value="">Select A Service2</option>
+                    <option value="">Select A Service3</option>
+                </select>
+            </div>
+            <div class="mt-12">
+                <textarea placeholder="Special Note" class="w-full px-3 py-2 border border-[#AB7442]"></textarea>
+            </div>
+            <div class="mt-12">
+                <button class="w-full bg-[#AB7442] py-3 text-center text-white">Submit</button>
+            </div>
+        </form>
+    </div>
+
+ </div>
+  <!-- team-section -->
+ <section class="team mx-12 ">
+    <h1 class="text-5xl font-bold text-center mt-6">Team Members</h1>
+    <div class="team-members flex mt-6 ">
+        <div class="member mr-4 relative hover:visible" data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/team-1.jpg"  alt="" >
+            <div class="info text-center ">
+                <h5 class="text-xl font-bold mt-6">Full Name</h5>
+                <span class="text-sm">Designation</span>
+            </div>
+            <div class="social-link flex flex-col absolute  bottom-40 left-0 bg-white  px-4 py-4 gap-4">
+                <i class="fa-brands fa-facebook-f text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-twitter text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-instagram  text-[#AB7442] text-xs"></i>
+            </div>
+        </div>
+        <div class="member mr-4 " data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/team-2.jpg"  alt="">
+            <div class="info text-center ">
+                <h5 class="text-xl font-bold mt-6">Full Name</h5>
+                <span class="text-sm">Designation</span>
+            </div>
+            <div class="social-link flex flex-col absolute  bottom-40 left-0 bg-white px-4 py-4 gap-4">
+                <i class="fa-brands fa-facebook-f text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-twitter text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-instagram  text-[#AB7442] text-xs"></i>
+            </div>
+        </div>
+        <div class="member mr-4 " data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/team-3.jpg"  alt="">
+            <div class="info text-center ">
+                <h5 class="text-xl font-bold mt-6">Full Name</h5>
+                <span class="text-sm">Designation</span>
+            </div>
+            <div class="social-link flex flex-col absolute  bottom-40 left-0 bg-white px-4 py-4 gap-4">
+                <i class="fa-brands fa-facebook-f text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-twitter text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-instagram  text-[#AB7442] text-xs"></i>
+            </div>
+        </div>
+        <div class="member mr-4 " data-aos="fade-up"  data-aos-duration="1500">
+            <img src="img/team-4.jpg"  alt="">
+            <div class="info text-center ">
+                <h5 class="text-xl font-bold mt-6">Full Name</h5>
+                <span class="text-sm">Designation</span>
+            </div>
+            <div class="social-link flex flex-col absolute  bottom-40 left-0 bg-white px-4 py-4 gap-4">
+                <i class="fa-brands fa-facebook-f text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-twitter text-[#AB7442] text-xs"></i>
+                <i class="fa-brands fa-instagram  text-[#AB7442] text-xs"></i>
+            </div>
+        </div>
+    </div>
+ </section>
+ 
+ <!-- testimonial-section -->
+ <section class="testimonial-section mb-12">
+    <h1 class="text-5xl font-bold mt-12 text-center">Testimonial</h1>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex flex-col">        
+            <img src="img/testimonial-1.jpg" alt="" class="mx-auto mt-12 rounded-full img-size">
+            <p class="mt-12 text-sm"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit  <br>amet consectetur adipisicing elit Fugit quibusdam fuga aut error tenetur iureerror <br> tenetur iure error tenetur iureerror tenetur iure.</p>
+            <h5 class="text-xl font-semibold mt-3 mb-2">Client Name</h5>
+            <span class=" text-sm italic">Profession</span>
+
+          </div>
+          <div class="swiper-slide flex flex-col">        
+            <img src="img/testimonial-2.jpg" alt="" class="mx-auto mt-12 rounded-full img-size">
+            <p class="mt-12 text-sm"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit  <br>amet consectetur adipisicing elit Fugit quibusdam fuga aut error tenetur iureerror <br> tenetur iure error tenetur iureerror tenetur iure.</p>
+            <h5 class="text-xl font-semibold mt-3 mb-2">Client Name</h5>
+            <span class=" text-sm italic">Profession</span>
+
+          </div>
+          <div class="swiper-slide flex flex-col">        
+            <img src="img/testimonial-3.jpg" alt="" class="mx-auto mt-12 rounded-full img-size">
+            <p class="mt-12 text-sm"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit  <br>amet consectetur adipisicing elit Fugit quibusdam fuga aut error tenetur iureerror <br> tenetur iure error tenetur iureerror tenetur iure.</p>
+            <h5 class="text-xl font-semibold mt-3 mb-2">Client Name</h5>
+            <span class=" text-sm italic">Profession</span>
+
+          </div>
+      
+        </div>
+      </div>
+    <div class="testimonial text-center">
+        
+   
+
+    </div>
+ </section>
+ <!-- footer-section -->
+ <section class="footer bg-[#1E293B] text-white pt-12 pb-12">
+    <div class="footer-row flex justify-between mt-12 pb-12 ">
+        <div class="footer-col mt-12 mx-auto ">
+            <h3 class="text-2xl font-bold">Address</h3>
+            <div class="footer-des mt-6">
+                <div class="des">
+                    <i class="fa-solid fa-location-dot mr-4"></i>
+                    <span>123 Street, New York, USA</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-phone mr-4"></i>
+                    <span>+012 345 67890</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-envelope mr-4"></i>
+                    <span>mail@domain.com</span>
+                </div>
+                <div class="social-link mt-3">
+                    <i class="fa-brands fa-twitter mr-1 border px-3 py-2 hover:bg-[#303030]"></i>
+                    <i class="fa-brands fa-facebook-f mr-1 border px-3 py-2 hover:bg-[#303030]"></i>
+                    <i class="fa-brands fa-youtube mr-1 border px-3 py-2 hover:bg-[#303030]"></i>
+                    <i class="fa-brands fa-linkedin-in mr-1 border px-3 py-2 hover:bg-[#303030]"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-col mt-12 mx-auto ">
+            <h3  class="text-2xl font-bold">Services</h3>
+            <div class="footer-des mt-6">
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span class="hover:text-[#303030]">General Carpentry</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span class="hover:text-[#303030]">Furniture Remodeling</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span class="hover:text-[#303030]">Wooden Floor</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span class="hover:text-[#303030]">Wooden Furniture</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span class="hover:text-[#303030]">Custom Carpentry</span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-col mt-12 mx-auto ">
+            <h3 class="text-2xl font-bold">Quick Links</h3>
+            <div class="footer-des mt-6">
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span>General Carpentry</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span>Furniture Remodeling</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span>Wooden Floor</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span>Wooden Furniture</span>
+                </div>
+                <div class="des">
+                    <i class="fa-solid fa-angle-right mr-2"></i>
+                    <span>Custom Carpentry</span>
+                </div>
+               
+            </div>
+        </div>
+        <div class="footer-col mt-12 mx-auto ">
+            <h3  class="text-2xl font-bold">Newsletter</h3>
+           <p class="mt-6 mb-6">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit.</p>
+           <div>
+            <input type="email" placeholder="Your Email" class="py-3 px-4 relative right-6">
+            <button class="bg-[#AB7442] absolute py-2 px-4">SignUp</button>
+           </div> 
+          
+            </div>
+        </div>
+        <hr>
+        <div class="copyright mt-6 mx-12 flex  justify-between">
+            <p class="">© <span class="underline">Your Site Name,</span>  All Rights Reserved.</p>
+            <p>Designed By <span class="underline">HTML Codex</span> </p>
+        </div>
+       
+
+ </section>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <!-- Swiper JS -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {});
+     </script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 </html>
